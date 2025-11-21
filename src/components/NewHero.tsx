@@ -1,0 +1,22 @@
+import { Button } from "@/components/ui/button";
+
+export const NewHero = () => {
+  return (
+    <section className="relative min-h-[35vh] flex items-center justify-center pt-32 md:pt-36 pb-8 md:pb-12">
+      <div className="container max-w-4xl mx-auto px-4">
+        <div className="text-center space-y-6">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-poppins font-bold leading-tight">
+            Crie SaaS, Copies e Contratos
+            <span className="block text-primary mt-2">
+              em Minutos
+            </span>
+          </h1>
+          
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+            Só responda algumas perguntas. O resto a InfinityIA faz por você.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+};
