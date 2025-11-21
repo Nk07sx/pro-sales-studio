@@ -1,5 +1,6 @@
 import { Code2, Megaphone, FileText, Rocket, Users } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
+import { GlowingEffect } from "./ui/glowing-effect";
 
 const audiences = [
   {
@@ -51,10 +52,17 @@ export const TargetAudience = () => {
             return (
               <Card
                 key={index}
-                className="group relative overflow-hidden border-border/50 bg-card/80 backdrop-blur-xl hover:border-primary/60 transition-all duration-300 hover:scale-105 hover:shadow-[0_10px_40px_rgba(59,130,246,0.3)] animate-fade-in"
+                className="group relative overflow-hidden border-border/50 bg-card/80 backdrop-blur-xl transition-all duration-300 hover:scale-[1.02] animate-fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="absolute -inset-[2px] bg-gradient-to-br from-primary/40 via-accent/40 to-primary/40 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md" />
+                <GlowingEffect
+                  disabled={false}
+                  proximity={100}
+                  blur={10}
+                  spread={30}
+                  borderWidth={2}
+                  movementDuration={0.5}
+                />
                 
                 <CardContent className="relative p-6">
                   <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary to-accent p-0.5 mb-4 group-hover:scale-110 transition-transform duration-300">
