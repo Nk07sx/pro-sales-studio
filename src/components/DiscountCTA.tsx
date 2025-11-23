@@ -7,7 +7,7 @@ export const DiscountCTA = () => {
   };
 
   return (
-    <section className="py-8 md:py-12 px-4 bg-primary/5">
+    <section className="py-6 md:py-8 px-4 bg-primary/5">
       <div className="container max-w-4xl mx-auto">
         <div className="bg-gradient-to-br from-primary to-primary/90 rounded-xl md:rounded-2xl p-6 md:p-10 shadow-xl text-primary-foreground relative overflow-hidden">
           <div className="absolute top-0 right-0 w-32 h-32 md:w-48 md:h-48 bg-white/5 rounded-full -mr-16 md:-mr-24 -mt-16 md:-mt-24" />

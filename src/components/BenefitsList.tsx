@@ -42,7 +42,7 @@ export const BenefitsList = () => {
   );
 
   return (
-    <section className="py-8 md:py-12 px-4 bg-secondary/30">
+    <section className="py-8 md:py-10 px-4 bg-secondary/30">
       <div className="container max-w-6xl mx-auto">
         <h2 className="text-2xl md:text-4xl font-bold text-center mb-6 md:mb-8">
           Tudo Que Você Vai Ter <span className="text-primary">Acesso</span>
