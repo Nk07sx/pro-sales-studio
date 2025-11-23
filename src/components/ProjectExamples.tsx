@@ -96,7 +96,7 @@ export const ProjectExamples = () => {
                   <CarouselContent>
                     {project.images.map((image, imgIndex) => (
                       <CarouselItem key={imgIndex}>
-                        <div className="relative aspect-video min-h-[250px] md:min-h-[400px] rounded-lg overflow-hidden">
+                        <div className="relative aspect-video rounded-lg overflow-hidden">
                           <img 
                             src={image} 
                             alt={`${project.name} screenshot ${imgIndex + 1}`}
@@ -112,7 +112,7 @@ export const ProjectExamples = () => {
               </div>
               
               {/* Vídeo */}
-              <div className="aspect-video min-h-[250px] md:min-h-[400px] rounded-lg overflow-hidden">
+              <div className="aspect-video rounded-lg overflow-hidden">
                 <iframe
                   width="100%"
                   height="100%"
