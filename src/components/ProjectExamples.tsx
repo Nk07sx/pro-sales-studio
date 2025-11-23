@@ -68,7 +68,7 @@ export const ProjectExamples = () => {
   return (
     <section className="py-8 md:py-12 px-4">
       <div className="container max-w-6xl mx-auto">
-        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-center mb-6 md:mb-10 font-poppins">
+        <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-center mb-6 md:mb-10 font-poppins">
           SaaS Vendidos Para <span className="text-primary">Grandes Empresas</span>
         </h2>
         
@@ -84,14 +84,14 @@ export const ProjectExamples = () => {
                 </div>
                 
                 <div>
-                  <h3 className="text-xl md:text-2xl font-bold mb-1 md:mb-2 font-poppins">{project.name}</h3>
-                  <p className="text-primary text-xs md:text-sm font-semibold mb-1 md:mb-2">{project.company}</p>
-                  <p className="text-sm md:text-base text-muted-foreground">{project.description}</p>
+                  <h3 className="text-2xl md:text-3xl font-bold mb-2 md:mb-2 font-poppins">{project.name}</h3>
+                  <p className="text-primary text-sm md:text-base font-semibold mb-2 md:mb-2">{project.company}</p>
+                  <p className="text-base md:text-lg text-muted-foreground">{project.description}</p>
                 </div>
               </div>
               
               {/* Carousel de Imagens */}
-              <div className="mb-4 md:mb-6 px-0 md:px-12">
+              <div className="mb-6 md:mb-8 px-0 md:px-12">
                 <Carousel className="w-full">
                   <CarouselContent>
                     {project.images.map((image, imgIndex) => (
