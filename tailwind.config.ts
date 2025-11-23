@@ -1,6 +1,11 @@
 import type { Config } from "tailwindcss";
 
 export default {
+  theme: {
+    extend: {
+      fontFamily: {
+        handwritten: ['"Caveat"', 'cursive'],
+      },
   darkMode: ["class"],
   content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
   prefix: "",
