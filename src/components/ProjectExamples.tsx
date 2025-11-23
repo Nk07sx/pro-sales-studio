@@ -66,13 +66,13 @@ const projects = [
 
 export const ProjectExamples = () => {
   return (
-    <section className="py-10 md:py-16 px-4">
+    <section className="py-8 md:py-12 px-4">
       <div className="container max-w-6xl mx-auto">
-        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-center mb-8 md:mb-12 font-poppins">
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-center mb-6 md:mb-10 font-poppins">
           SaaS Vendidos Para <span className="text-primary">Grandes Empresas</span>
         </h2>
         
-        <div className="space-y-8 md:space-y-12">
+        <div className="space-y-6 md:space-y-10">
           {projects.map((project, index) => (
             <div 
               key={index}

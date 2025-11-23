@@ -33,7 +33,7 @@ const bonuses = [
 
 export const BonusSection = () => {
   return (
-    <section className="py-20 md:py-24 px-4 relative overflow-hidden bg-gradient-to-b from-background via-secondary/30 to-background">
+    <section className="py-10 md:py-16 px-4 relative overflow-hidden bg-gradient-to-b from-background via-secondary/30 to-background">
       {/* Efeitos de fundo animados */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse" />
@@ -41,7 +41,7 @@ export const BonusSection = () => {
       </div>
 
       <div className="container max-w-7xl mx-auto relative z-10">
-        <div className="text-center mb-16 animate-fade-in">
+        <div className="text-center mb-10 md:mb-12 animate-fade-in">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/30 rounded-full mb-4">
             <Gift className="h-4 w-4 text-primary animate-pulse" />
             <span className="text-sm font-medium text-primary">Ganhe R$ 3.088 em Bônus</span>
@@ -124,7 +124,7 @@ export const BonusSection = () => {
         </div>
 
         {/* CTA adicional */}
-        <div className="mt-16 text-center animate-fade-in" style={{ animationDelay: "600ms" }}>
+        <div className="mt-10 md:mt-12 text-center animate-fade-in" style={{ animationDelay: "600ms" }}>
           <div className="inline-block p-6 bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 border border-primary/30 rounded-2xl">
             <p className="text-2xl font-bold mb-2">
               Valor Total: <span className="line-through text-muted-foreground">R$ 3.088</span>

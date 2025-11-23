@@ -67,11 +67,11 @@ const proofs = [
 
 export const SocialProof = () => {
   return (
-    <section className="py-16 md:py-20 px-4 bg-gradient-to-b from-background via-secondary/30 to-background relative overflow-hidden">
+    <section className="py-8 md:py-12 px-4 bg-gradient-to-b from-background via-secondary/30 to-background relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,hsl(var(--primary)/0.1),transparent_50%)]" />
       
       <div className="container max-w-7xl mx-auto relative z-10">
-        <div className="text-center mb-12 animate-fade-in">
+        <div className="text-center mb-8 md:mb-10 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Resultados <span className="text-primary">Reais</span> de Quem Está Usando
           </h2>

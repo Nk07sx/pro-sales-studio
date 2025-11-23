@@ -32,9 +32,9 @@ const audiences = [
 
 export const TargetAudience = () => {
   return (
-    <section className="py-16 px-4 relative overflow-hidden bg-gradient-to-b from-background via-primary/5 to-background">
+    <section className="py-8 md:py-12 px-4 relative overflow-hidden bg-gradient-to-b from-background via-primary/5 to-background">
       <div className="container mx-auto max-w-6xl relative z-10">
-        <div className="text-center mb-12">
+        <div className="text-center mb-8 md:mb-10">
           <div className="inline-block px-4 py-2 bg-primary/10 border border-primary/30 rounded-full mb-4">
             <span className="text-sm font-medium text-primary">Público Alvo</span>
           </div>
