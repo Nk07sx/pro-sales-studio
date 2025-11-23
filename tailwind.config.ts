@@ -15,7 +15,6 @@ export default {
     extend: {
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],
-        'handwritten': ['"Caveat"', 'cursive'],
       },
       colors: {
         border: "hsl(var(--border))",
