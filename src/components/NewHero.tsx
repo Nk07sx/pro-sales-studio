@@ -3,11 +3,11 @@ import { Users } from "lucide-react";
 
 export const NewHero = () => {
   return (
-    <section className="relative min-h-[50vh] flex items-center justify-center pt-24 md:pt-28 pb-12 md:pb-16">
+    <section className="relative min-h-[50vh] flex items-center justify-center pt-20 md:pt-24 pb-12 md:pb-16">
       <div className="container max-w-4xl mx-auto px-4">
         <div className="text-center space-y-6 md:space-y-8">
           {/* Badge Usuários Online */}
-          <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full border-2 border-primary/30 bg-primary/10">
+          <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full border-2 border-primary/30 bg-primary/10 animate-pulse shadow-glow">
             <Users className="w-5 h-5 text-primary" />
             <span className="text-primary font-semibold">Usuários online</span>
             <span className="text-primary font-bold">2.263</span>
