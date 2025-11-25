@@ -1,5 +1,4 @@
 import { ParticlesBackground } from "@/components/ParticlesBackground";
-import { OfferBanner } from "@/components/OfferBanner";
 import { Navbar } from "@/components/Navbar";
 import { NewHero } from "@/components/NewHero";
 import { ProjectExamples } from "@/components/ProjectExamples";
@@ -17,7 +16,6 @@ import { CTA } from "@/components/CTA";
 const Index = () => {
   return (
     <div className="min-h-screen relative">
-      <OfferBanner />
       <Navbar />
       <ParticlesBackground />
       <NewHero />
