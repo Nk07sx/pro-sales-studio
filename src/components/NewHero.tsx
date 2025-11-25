@@ -1,21 +1,32 @@
 import { Button } from "@/components/ui/button";
+import { Users } from "lucide-react";
 
 export const NewHero = () => {
   return (
-    <section className="relative min-h-[30vh] flex items-center justify-center pt-24 md:pt-28 pb-6 md:pb-8">
+    <section className="relative min-h-[50vh] flex items-center justify-center pt-24 md:pt-28 pb-12 md:pb-16">
       <div className="container max-w-4xl mx-auto px-4">
-        <div className="text-center space-y-4 md:space-y-6">
+        <div className="text-center space-y-6 md:space-y-8">
+          {/* Badge Usuários Online */}
+          <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full border-2 border-primary/30 bg-primary/10">
+            <Users className="w-5 h-5 text-primary" />
+            <span className="text-primary font-semibold">Usuários online</span>
+            <span className="text-primary font-bold">2.263</span>
+          </div>
+
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-poppins font-bold leading-[1.1] sm:leading-tight">
-            <span className="block">Crie SaaS, Copies</span>
-            <span className="block">e Contratos</span>
+            <span className="block">Transforme ideias em</span>
             <span className="block text-primary mt-1 sm:mt-2">
-              em Minutos
+              SaaS inteligentes
             </span>
           </h1>
           
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
-            Só responda algumas perguntas. O resto a InfinityIA faz por você.
+            Conheça a InfinityIA e crie negócios digitais completos com o poder da IA.
           </p>
+
+          <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg rounded-full mt-4">
+            Assinar Agora
+          </Button>
         </div>
       </div>
     </section>

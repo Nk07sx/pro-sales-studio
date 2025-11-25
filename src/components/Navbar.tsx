@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 export const Navbar = () => {
   return (
     <nav className="fixed top-[40px] md:top-[48px] left-0 right-0 z-40 bg-background/80 backdrop-blur-sm border-b border-border/50">
@@ -6,6 +8,9 @@ export const Navbar = () => {
           <h2 className="text-xl md:text-2xl font-poppins font-bold text-foreground">
             InfinityIA
           </h2>
+          <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 md:px-8 rounded-full">
+            Assinar Agora
+          </Button>
         </div>
       </div>
     </nav>
