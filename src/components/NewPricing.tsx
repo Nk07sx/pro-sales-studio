@@ -69,7 +69,7 @@ const plans = [
 
 export const NewPricing = () => {
   return (
-    <section className="py-8 md:py-12 px-4 bg-gradient-to-b from-background to-muted/20">
+    <section id="pricing" className="py-8 md:py-12 px-4 bg-gradient-to-b from-background to-muted/20">
       <div className="container max-w-6xl mx-auto">
         <div className="text-center mb-8 md:mb-10">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-poppins font-bold mb-4">

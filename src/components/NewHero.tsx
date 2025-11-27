@@ -2,6 +2,13 @@ import { Button } from "@/components/ui/button";
 import { Users } from "lucide-react";
 
 export const NewHero = () => {
+  const scrollToPricing = () => {
+    const pricingSection = document.getElementById('pricing');
+    if (pricingSection) {
+      pricingSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <section className="relative min-h-[50vh] flex items-center justify-center pt-20 md:pt-24 pb-12 md:pb-16">
       <div className="container max-w-4xl mx-auto px-4">
@@ -24,7 +31,10 @@ export const NewHero = () => {
             Conheça a InfinityIA e crie negócios digitais completos com o poder da IA.
           </p>
 
-          <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg rounded-full mt-4">
+          <Button 
+            onClick={scrollToPricing}
+            className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg rounded-full mt-4"
+          >
             Assinar Agora
           </Button>
         </div>
