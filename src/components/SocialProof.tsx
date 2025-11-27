@@ -1,5 +1,6 @@
 import { TrendingUp, DollarSign, Users, Star, Quote, Briefcase } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
+import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
   CarouselContent,
@@ -85,6 +86,11 @@ export const SocialProof = () => {
             align: "start",
             loop: true,
           }}
+          plugins={[
+            Autoplay({
+              delay: 3000,
+            }),
+          ]}
           className="w-full"
         >
           <CarouselContent className="-ml-4">
