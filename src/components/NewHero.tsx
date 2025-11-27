@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Users } from "lucide-react";
+import infinityiaLogo from "@/assets/infinityia-logo.png";
 
 export const NewHero = () => {
   const scrollToPricing = () => {
@@ -31,12 +32,19 @@ export const NewHero = () => {
             Conheça a InfinityIA e crie negócios digitais completos com o poder da IA.
           </p>
 
-          <Button 
-            onClick={scrollToPricing}
-            className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg rounded-full mt-4"
-          >
-            Assinar Agora
-          </Button>
+          <div className="mt-6">
+            <img 
+              src={infinityiaLogo} 
+              alt="InfinityIA Logo" 
+              className="mx-auto max-w-md w-full px-4 mb-6"
+            />
+            <Button 
+              onClick={scrollToPricing}
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg rounded-full"
+            >
+              Assinar Agora
+            </Button>
+          </div>
         </div>
       </div>
     </section>
