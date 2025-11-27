@@ -36,7 +36,7 @@ export const NewHero = () => {
             <img 
               src={infinityiaLogo} 
               alt="InfinityIA Logo" 
-              className="mx-auto max-w-md w-full px-4 mb-6"
+              className="mx-auto max-w-md w-full px-4 mb-6 rounded-2xl shadow-[0_0_30px_rgba(59,130,246,0.5)] border-2 border-primary/30"
             />
             <Button 
               onClick={scrollToPricing}
