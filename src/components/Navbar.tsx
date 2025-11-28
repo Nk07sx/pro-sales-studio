@@ -17,7 +17,7 @@ export const Navbar = () => {
           </h2>
           <Button 
             onClick={scrollToPricing}
-            className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 md:px-8 rounded-full"
+            className="bg-white hover:bg-white/90 text-background font-semibold px-6 md:px-8 rounded-full"
           >
             Assinar Agora
           </Button>
