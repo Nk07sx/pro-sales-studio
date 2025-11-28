@@ -22,7 +22,7 @@ export const NewHero = () => {
           </div>
 
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-poppins font-bold leading-[1.1] sm:leading-tight">
-            <span className="block">Transforme ideias em</span>
+            <span className="block text-primary">Transforme ideias em</span>
             <span className="block text-primary mt-1 sm:mt-2">
               SaaS inteligentes
             </span>
