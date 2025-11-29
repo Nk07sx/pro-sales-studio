@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check } from "lucide-react";
+import { redirectWithParams } from "@/lib/url-utils";
 
 const plans = [
   {
@@ -9,6 +10,7 @@ const plans = [
     oldPrice: "R$ 147",
     period: "/mês",
     description: "Perfeito para começar",
+    checkoutUrl: "https://pay.kiwify.com.br/YOUR_CHECKOUT_URL_STARTER", // Adicione sua URL de checkout aqui
     features: [
       "InfinitCopy",
       "InfinitCraft básico",
@@ -29,6 +31,7 @@ const plans = [
     oldPrice: "R$ 497",
     period: "/semestre",
     description: "Mais completo",
+    checkoutUrl: "https://pay.kiwify.com.br/YOUR_CHECKOUT_URL_PRO", // Adicione sua URL de checkout aqui
     features: [
       "Tudo do Starter",
       "Geração ilimitada",
@@ -51,6 +54,7 @@ const plans = [
     oldPrice: "R$ 997",
     period: "",
     description: "Acesso para sempre",
+    checkoutUrl: "https://pay.kiwify.com.br/YOUR_CHECKOUT_URL_VITALICIO", // Adicione sua URL de checkout aqui
     features: [
       "Tudo do Pro",
       "Acesso vitalício",
@@ -122,6 +126,7 @@ export const NewPricing = () => {
                   className="w-full mt-6" 
                   variant="default"
                   size="lg"
+                  onClick={() => redirectWithParams(plan.checkoutUrl)}
                 >
                   {plan.cta}
                 </Button>

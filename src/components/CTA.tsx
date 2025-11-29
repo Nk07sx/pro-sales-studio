@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Sparkles } from "lucide-react";
+import { redirectWithParams } from "@/lib/url-utils";
 
 export const CTA = () => {
   return (
@@ -14,7 +15,11 @@ export const CTA = () => {
         <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
           Não perca mais tempo. Transforme suas ideias em realidade em minutos.
         </p>
-        <Button size="lg" className="text-xl px-12 py-8 h-auto shadow-glow hover:scale-105 transition-transform">
+        <Button 
+          size="lg" 
+          className="text-xl px-12 py-8 h-auto shadow-glow hover:scale-105 transition-transform"
+          onClick={() => redirectWithParams("https://pay.kiwify.com.br/YOUR_CHECKOUT_URL")} // Adicione sua URL de checkout aqui
+        >
           Começar Agora
         </Button>
       </div>

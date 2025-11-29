@@ -1,5 +1,6 @@
 import { Zap, Tag, Clock } from "lucide-react";
 import { Button } from "./ui/button";
+import { redirectWithParams } from "@/lib/url-utils";
 
 export const DiscountCTA = () => {
   const handleCopyCode = () => {
@@ -57,6 +58,7 @@ export const DiscountCTA = () => {
                 size="lg" 
                 variant="secondary"
                 className="text-base md:text-lg px-6 md:px-8 py-4 md:py-6 h-auto font-bold w-full sm:w-auto"
+                onClick={() => redirectWithParams("https://pay.kiwify.com.br/YOUR_CHECKOUT_URL_VITALICIO")} // Adicione sua URL de checkout aqui
               >
                 Garantir Meu Desconto Agora
               </Button>
