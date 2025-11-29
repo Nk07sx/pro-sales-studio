@@ -10,7 +10,7 @@ const plans = [
     oldPrice: "R$ 147",
     period: "/mês",
     description: "Perfeito para começar",
-    checkoutUrl: "https://pay.kiwify.com.br/YOUR_CHECKOUT_URL_STARTER", // Adicione sua URL de checkout aqui
+    checkoutUrl: "https://go.perfectpay.com.br/PPU38CQ43IF",
     features: [
       "InfinitCopy",
       "InfinitCraft básico",
@@ -31,7 +31,7 @@ const plans = [
     oldPrice: "R$ 497",
     period: "/semestre",
     description: "Mais completo",
-    checkoutUrl: "https://pay.kiwify.com.br/YOUR_CHECKOUT_URL_PRO", // Adicione sua URL de checkout aqui
+    checkoutUrl: "https://go.perfectpay.com.br/PPU38CQ43IR",
     features: [
       "Tudo do Starter",
       "Geração ilimitada",
@@ -54,7 +54,7 @@ const plans = [
     oldPrice: "R$ 997",
     period: "",
     description: "Acesso para sempre",
-    checkoutUrl: "https://pay.kiwify.com.br/YOUR_CHECKOUT_URL_VITALICIO", // Adicione sua URL de checkout aqui
+    checkoutUrl: "https://go.perfectpay.com.br/PPU38CQ43J2",
     features: [
       "Tudo do Pro",
       "Acesso vitalício",
