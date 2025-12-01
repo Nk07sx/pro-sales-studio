@@ -105,8 +105,9 @@ export const ProjectExamples = () => {
                             alt={`${project.name} screenshot ${imgIndex + 1}`}
                             className="w-full h-full object-cover"
                           />
-                          <div className="absolute top-3 right-3 bg-primary text-primary-foreground px-3 py-1.5 rounded-lg font-bold text-sm shadow-lg">
-                            {project.price}
+                          <div className="absolute top-3 right-3 bg-green-500 text-white px-3 py-1.5 rounded-lg shadow-lg text-sm">
+                            <span className="font-medium">Vendido por </span>
+                            <span className="font-bold">{project.price}</span>
                           </div>
                         </div>
                       </CarouselItem>
