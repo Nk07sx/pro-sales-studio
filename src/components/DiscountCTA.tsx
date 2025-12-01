@@ -58,7 +58,7 @@ export const DiscountCTA = () => {
                 size="lg" 
                 variant="secondary"
                 className="text-base md:text-lg px-6 md:px-8 py-4 md:py-6 h-auto font-bold w-full sm:w-auto"
-                onClick={() => redirectWithParams("https://pay.kiwify.com.br/YOUR_CHECKOUT_URL_VITALICIO")} // Adicione sua URL de checkout aqui
+                onClick={() => redirectWithParams("https://go.perfectpay.com.br/PPU38CQ43J2")}
               >
                 Garantir Meu Desconto Agora
               </Button>
