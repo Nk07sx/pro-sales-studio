@@ -79,8 +79,14 @@ export const ProjectExamples = () => {
           {projects.map((project, index) => (
             <div 
               key={index}
-              className="p-4 md:p-6 lg:p-8 rounded-xl md:rounded-2xl bg-card border border-border hover:border-primary transition-all hover:shadow-glow"
+              className="relative p-4 md:p-6 lg:p-8 rounded-xl md:rounded-2xl bg-card border border-border hover:border-primary transition-all hover:shadow-glow"
             >
+              {/* Badge de preço fixo no card */}
+              <div className="absolute top-4 right-4 md:top-6 md:right-6 bg-green-500 text-white px-3 py-1.5 rounded-lg shadow-lg text-sm z-10">
+                <span className="font-medium">Vendido por </span>
+                <span className="font-bold">{project.price}</span>
+              </div>
+              
               <div className="flex flex-col md:flex-row items-start gap-4 md:gap-6 mb-4 md:mb-6">
                 <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                   <Building2 className="h-6 w-6 md:h-8 md:w-8 text-primary" />
@@ -105,10 +111,6 @@ export const ProjectExamples = () => {
                             alt={`${project.name} screenshot ${imgIndex + 1}`}
                             className="w-full h-full object-cover"
                           />
-                          <div className="absolute top-3 right-3 bg-green-500 text-white px-3 py-1.5 rounded-lg shadow-lg text-sm">
-                            <span className="font-medium">Vendido por </span>
-                            <span className="font-bold">{project.price}</span>
-                          </div>
                         </div>
                       </CarouselItem>
                     ))}
