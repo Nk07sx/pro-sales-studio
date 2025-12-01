@@ -82,7 +82,7 @@ export const ProjectExamples = () => {
               className="relative p-4 md:p-6 lg:p-8 rounded-xl md:rounded-2xl bg-card border border-border hover:border-primary transition-all hover:shadow-glow"
             >
               {/* Badge de preço fixo no card */}
-              <div className="absolute top-4 right-4 md:top-6 md:right-6 bg-green-500 text-white px-3 py-1.5 rounded-lg shadow-lg text-sm z-10">
+              <div className="absolute -top-3 -right-3 md:-top-4 md:-right-4 bg-green-500 text-white px-4 py-2 rounded-full shadow-xl text-sm md:text-base z-20 border-2 border-background">
                 <span className="font-medium">Vendido por </span>
                 <span className="font-bold">{project.price}</span>
               </div>
