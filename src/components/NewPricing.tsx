@@ -6,8 +6,8 @@ import { redirectWithParams } from "@/lib/url-utils";
 const plans = [
   {
     name: "Starter",
-    price: "R$ 87",
-    oldPrice: "R$ 147",
+    price: "R$ 57",
+    oldPrice: "R$ 97",
     period: "/mês",
     description: "Perfeito para começar",
     checkoutUrl: "https://go.perfectpay.com.br/PPU38CQ43IF",

@@ -36,6 +36,7 @@ const projects = [
       manicure6,
     ],
     videoId: "kkldT895UG4",
+    price: "R$ 1.497",
   },
   {
     name: "Sistema de Agendamento para Barbearia",
@@ -48,6 +49,7 @@ const projects = [
       barber4,
     ],
     videoId: "3qESTj_Rr4w",
+    price: "R$ 1.800",
   },
   {
     name: "Sistema de Gestão para Escritório de Advocacia",
@@ -61,6 +63,7 @@ const projects = [
       crm5,
     ],
     videoId: "-vb7_bE_pvE",
+    price: "R$ 2.200",
   },
 ];
 
@@ -102,6 +105,9 @@ export const ProjectExamples = () => {
                             alt={`${project.name} screenshot ${imgIndex + 1}`}
                             className="w-full h-full object-cover"
                           />
+                          <div className="absolute top-3 right-3 bg-primary text-primary-foreground px-3 py-1.5 rounded-lg font-bold text-sm shadow-lg">
+                            {project.price}
+                          </div>
                         </div>
                       </CarouselItem>
                     ))}
