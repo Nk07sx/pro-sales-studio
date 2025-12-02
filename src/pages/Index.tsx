@@ -7,7 +7,6 @@ import { BenefitsList } from "@/components/BenefitsList";
 import { BonusSection } from "@/components/BonusSection";
 import { SocialProof } from "@/components/SocialProof";
 import { Guarantee } from "@/components/Guarantee";
-import { DiscountCTA } from "@/components/DiscountCTA";
 import { NewPricing } from "@/components/NewPricing";
 
 import { FAQ } from "@/components/FAQ";
@@ -26,7 +25,6 @@ const Index = () => {
       <SocialProof />
       <NewPricing />
       <Guarantee />
-      <DiscountCTA />
       <FAQ />
       <CTA />
     </div>
