@@ -18,7 +18,7 @@ export const CTA = () => {
         <Button 
           size="lg" 
           className="text-xl px-12 py-8 h-auto shadow-glow hover:scale-105 transition-transform"
-          onClick={() => redirectWithParams("https://pay.kiwify.com.br/YOUR_CHECKOUT_URL")} // Adicione sua URL de checkout aqui
+          onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
         >
           Começar Agora
         </Button>
